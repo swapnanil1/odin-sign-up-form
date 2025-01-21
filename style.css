@@ -1,0 +1,55 @@
+button,
+input,
+select,
+textarea {
+  /* default reset */
+  font-family: inherit;
+  font-size: 100%;
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* setting font */
+  font-family: "Rubik", serif;
+  font-optical-sizing: auto;
+  font-weight: 700; /* Bold weight */
+  font-style: normal;
+  /* reseting padding and margin to apply manually later */
+  padding: 0%;
+  margin: 0%;
+}
+.main {
+  display: flex;
+}
+.left,
+.right {
+  display: flex;
+  justify-content: center;
+  width: 50vw;
+  height: 100vh;
+}
+.left {
+  background-image: url(sources/calm.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50vw;
+}
+.left .logotext {
+  padding-top: 15vh;
+  padding-right: 5vw;
+  color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  font-size: calc(1vw + 1vh + 0.5rem);
+}
+.left img {
+  width: 100px;
+  height: 120px;
+  margin-right: 1rem;
+  padding-top: 20px;
+}
