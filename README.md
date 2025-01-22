@@ -1,2 +1,7 @@
-# odin-sign-up-form
-A Odin Project for Intermediate HTML and CSS Course section
+# OdinProject-SignIn
+
+A Intermediate HTML and CSS Course Project
+
+# Run
+
+Live Demo - [Link](https://swapnanil1.github.io/odin-sign-up-form/)
