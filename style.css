@@ -1,3 +1,4 @@
+/* style.css */
 button,
 input,
 select,
@@ -18,8 +19,8 @@ body {
   font-weight: 600;
   font-style: normal;
   /* reseting padding and margin to apply manually later */
-  padding: 0%;
-  margin: 0%;
+  padding: 0;
+  margin: 0;
   background-color: #181818;
   color: #f5f5f5;
 }
@@ -37,7 +38,6 @@ body {
   background-image: url(sources/calm.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 50vw;
 }
 .left .logotext {
   margin-top: 20vh;
@@ -72,11 +72,11 @@ body {
 fieldset {
   padding: 2%;
   padding-bottom: 2vh;
-  margin: 0%;
+  margin: 0;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  border: 0cap;
+  border: 0;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Add this line for drop shadow */
 }
 fieldset .label {
