@@ -45,15 +45,29 @@
                 <label for="number">Phone</label>
                 <input type="tel" name="number" id="number" />
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password" />
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  pattern="(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  title="the password must contains at least one lowercase letter, one uppercase letter, and is at least 8 characters long."
+                  required
+                />
               </div>
               <div class="form-second-col">
                 <label for="lname">Last Name</label>
                 <input type="text" name="lname" id="lname" />
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" />
+                <input type="email" name="email" id="email" required />
                 <label for="cpassword">Confirm Password</label>
-                <input type="password" name="cpassword" id="cpassword" />
+                <input
+                  type="password"
+                  name="cpassword"
+                  id="cpassword"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  title="the password must  contains at least one lowercase letter, one uppercase letter, and is at least 8 characters long."
+                  required
+                />
               </div>
             </fieldset>
             <button type="submit">Create Account</button>
