@@ -13,13 +13,15 @@ textarea {
 
 body {
   /* setting font */
-  font-family: "Rubik", serif;
+  font-family: "Montserrat", serif;
   font-optical-sizing: auto;
-  font-weight: 700; /* Bold weight */
+  font-weight: 600;
   font-style: normal;
   /* reseting padding and margin to apply manually later */
   padding: 0%;
   margin: 0%;
+  background-color: #181818;
+  color: #f5f5f5;
 }
 .main {
   display: flex;
@@ -38,18 +40,95 @@ body {
   width: 50vw;
 }
 .left .logotext {
-  padding-top: 15vh;
-  padding-right: 5vw;
+  margin-top: 20vh;
   color: aliceblue;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: start;
   font-size: calc(1vw + 1vh + 0.5rem);
+  background-color: rgba(0, 0, 0, 0.5);
 }
+
 .left img {
   width: 100px;
   height: 120px;
   margin-right: 1rem;
   padding-top: 20px;
+}
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.right {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.right .container {
+  margin-top: 18vh;
+}
+fieldset {
+  padding: 2%;
+  padding-bottom: 2vh;
+  margin: 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border: 0cap;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Add this line for drop shadow */
+}
+fieldset .label {
+  font-size: 0.5rem;
+}
+.label,
+input {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+.form-first-col,
+.form-second-col {
+  margin-right: 8vw;
+}
+
+label {
+  font-size: 0.75rem;
+  font-style: italic;
+  font-weight: 400;
+}
+button {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  align-items: center;
+  background: #f5f5fa;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 10px 10px 30px 0 #fff, 10px 10px 30px 0 #1d0dca17;
+  box-sizing: border-box;
+  color: #002830;
+  cursor: pointer;
+  display: flex;
+  font-size: 1rem;
+  justify-content: center;
+  line-height: 1.5rem;
+  padding: 15px;
+  position: relative;
+  text-align: left;
+  transition: 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: pre;
+  width: max-content;
+  word-break: normal;
+  word-spacing: normal;
+}
+button:hover {
+  background: #f8f8ff;
+  box-shadow: 0px 0px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17;
 }
